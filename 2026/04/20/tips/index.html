@@ -28,7 +28,7 @@
 <meta property="og:description" content="📝 写文章新建文章：hexo new “文章标题” 或者在 source&#x2F;_posts&#x2F; 目录下创建 .md 文件（或删除示例文章 hello-world.md），然后重新运行 hexo clean; hexo generate; hexo deploy 即可更新博客。 如果想保留草稿不发布，可以把文章放在 source&#x2F;_drafts&#x2F; 目录，或者在前置">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2026-04-20T08:56:55.784Z">
-<meta property="article:modified_time" content="2026-04-20T09:49:07.955Z">
+<meta property="article:modified_time" content="2026-04-20T10:01:56.553Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -128,7 +128,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%9D-%E5%86%99%E6%96%87%E7%AB%A0"><span class="nav-number">1.</span> <span class="nav-text">📝 写文章</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%9D-%E5%86%99%E6%96%87%E7%AB%A0"><span class="nav-number">1.</span> <span class="nav-text">📝 写文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8E%A8-%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">🎨 更换主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8C%90-%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D"><span class="nav-number">3.</span> <span class="nav-text">🌐 绑定自定义域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%92%AC-%E9%85%8D%E7%BD%AE%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="nav-number">4.</span> <span class="nav-text">💬 配置评论系统</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -199,7 +199,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2026-04-20 16:56:55 / Modified: 17:49:07" itemprop="dateCreated datePublished" datetime="2026-04-20T16:56:55+08:00">2026-04-20</time>
+      <time title="Created: 2026-04-20 16:56:55 / Modified: 18:01:56" itemprop="dateCreated datePublished" datetime="2026-04-20T16:56:55+08:00">2026-04-20</time>
     </span>
 
   
@@ -214,9 +214,13 @@
     <div class="post-body" itemprop="articleBody"><h2 id="📝-写文章"><a href="#📝-写文章" class="headerlink" title="📝 写文章"></a>📝 写文章</h2><p>新建文章：hexo new “文章标题”</p>
 <p>或者在 source&#x2F;_posts&#x2F; 目录下创建 .md 文件（或删除示例文章 hello-world.md），<br>然后重新运行 hexo clean; hexo generate; hexo deploy 即可更新博客。</p>
 <p>如果想保留草稿不发布，可以把文章放在 source&#x2F;_drafts&#x2F; 目录，或者在前置声明中添加 published: false。</p>
-<p>更换主题：Hexo 有大量精美主题（如 NexT、Butterfly、Stellar 等），安装后修改 _config.yml 中的 theme 字段即可。更新：cd themes&#x2F;next，git pull</p>
-<p>绑定自定义域名：如果你有自己的域名（如 yourname.com），可以在仓库的 Settings → Pages 中绑定，并在 source 目录下添加一个 CNAME 文件。</p>
-<p>配置评论系统：可接入 Giscus、Valine 等评论服务。</p>
+<h2 id="🎨-更换主题"><a href="#🎨-更换主题" class="headerlink" title="🎨 更换主题"></a>🎨 更换主题</h2><p>更换主题：Hexo 有大量精美主题（如 NexT、Butterfly、Stellar 等），安装后修改 _config.yml 中的 theme 字段即可。更新：cd themes&#x2F;next，git pull;注意：更换主题后，需要重新生成并部署：hexo clean; hexo generate; hexo deploy</p>
+<h2 id="🌐-绑定自定义域名"><a href="#🌐-绑定自定义域名" class="headerlink" title="🌐 绑定自定义域名"></a>🌐 绑定自定义域名</h2><p>购买域名（如从阿里云、腾讯云、Namecheap 购买）。</p>
+<p>添加 CNAME 文件：在博客的 source 目录下手动创建一个名为 CNAME 的文件（无后缀），内容只写你的域名，例如：<a target="_blank" rel="noopener" href="http://www.yourname.com/">www.yourname.com</a><br>GitHub Pages 设置：<br>进入仓库 Settings → Pages<br>在 Custom domain 处填写你的域名，保存。<br>勾选 Enforce HTTPS（GitHub 会自动申请证书）。<br>域名解析：在你的域名控制台添加两条 CNAME 记录：<br>记录类型 主机记录 记录值<br>CNAME @ 你的用户名.github.io<br>CNAME www 你的用户名.github.io</p>
+<h2 id="💬-配置评论系统"><a href="#💬-配置评论系统" class="headerlink" title="💬 配置评论系统"></a>💬 配置评论系统</h2><p>推荐两款适合静态博客的评论系统：</p>
+<p>Giscus（基于 GitHub Discussions）<br>优点：无广告，支持 Markdown，与 GitHub 账号打通，无需自建数据库。<br>配置步骤：<br>确保你的博客仓库开启了 Discussions（Settings → General → Features → 勾选 Discussions）。<br>安装 Giscus App 到你的仓库。<br>访问 giscus.app，填写仓库信息，生成配置代码。</p>
+<p>将生成的 script 代码粘贴到主题的评论配置中（NexT 主题在 themes&#x2F;next&#x2F;_config.yml 中搜索 giscus 并开启）。</p>
+<p>Valine（基于 LeanCloud）<br>优点：国内访问快，无需 GitHub 账号。<br>配置步骤：<br>注册 LeanCloud 国际版，创建应用。<br>获取 appId 和 appKey。<br>在主题配置文件中开启 Valine 并填入对应的 Key。</p>
 
     </div>
 
